@@ -9,8 +9,8 @@
 
 @import "section/header.css";
 @import "section/intro.css";
-/* @import "section/slider.css";
+@import "section/slider.css"; 
 @import "section/project.css";
-@import "section/problem.css";
+/* @import "section/problem.css"; 
 @import "section/work.css";
-@import "section/profile.css"; */
+@import "section/profile.css"; */ 

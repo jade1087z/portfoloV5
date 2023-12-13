@@ -31,7 +31,6 @@
 .intro__desc em {
     font-size: 1rem;
     font-family: var(--font-s-core);
-    letter-spacing: 2%;
     line-height: 165%;
 }
 .intro__desc .em__title {
@@ -40,5 +39,28 @@
 }
 .intro__desc em {
 }
-@media (max-width: 650px) {
+
+@media (max-width: 800px) {
+
+}
+@media (max-width: 600px) {
+    .intro__inner {
+        padding-top: 100px;
+    }
+    .intro__inner .intro__img {
+        top: -2%;
+        left: -10%;
+        width: 50vw;
+        height: 20vw;
+    }
+    .intro__inner h3 {
+        font-size: 11vw;
+        line-height: 120%;
+        text-align: left;
+
+    }
+
+    .intro__desc {
+        width: 100%;
+    }
 }

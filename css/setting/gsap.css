@@ -1,7 +1,18 @@
 .INTROHIDDEN {
-    height: 8vw;
+ 
     overflow: hidden;
 }
 .IMGHIDDEN {
     overflow: hidden;
+}
+
+.PROJECTHIDDEN {
+    overflow: hidden;
+}
+
+
+@media (max-width: 800px) {
+    .INTROHIDDEN {
+        text-align: left;
+    }
 }
