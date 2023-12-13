@@ -1,0 +1,44 @@
+#intro {
+}
+.intro__inner {
+    position: relative;
+}
+.intro__inner .intro__title {
+    padding-bottom: 15vw;
+}
+.intro__inner .intro__img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-image: url(../../img/intro__card.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 11vw;
+    height: 6.3vw;
+}
+.intro__inner h3 {
+    font-size: 7.5vw;
+    line-height: 105%;
+    font-weight: 600;
+    letter-spacing: -3%;
+}
+.intro__desc {
+    width: 65%;
+}
+
+.intro__desc,
+.intro__desc em {
+    font-size: 1rem;
+    font-family: var(--font-s-core);
+    letter-spacing: 2%;
+    line-height: 165%;
+}
+.intro__desc .em__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.intro__desc em {
+}
+@media (max-width: 650px) {
+}

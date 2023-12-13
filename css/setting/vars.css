@@ -1,0 +1,57 @@
+:root {
+    --mainfont-gmarket: "GmarketSans";
+    --font-s-core: "SCoreDream";
+    --font-nanum: "nanumSquareNeo";
+    --font-chosun: "ChosunNm";
+    --font-Roboto: "Roboto Condensed";
+    font-family: var(--mainfont-gmarket);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    ---black: #000;
+    --black100: #333;
+    --black200: #22242a;
+    --black300: #777;
+    --black400: #999;
+    --black500: #d7d7d7;
+    --black600: #5f6168;
+
+    --white: #fff;
+    --white100: #eaeaea;
+    --line-color: #d2dadf;
+    --desc-color: #888a8b;
+}
+
+@media (max-width: 1510px) {
+    :root {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1400px) {
+    :root* {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1250px) {
+    :root* {
+        font-size: 11px;
+    }
+}
+@media (max-width: 1000px) {
+    :root* {
+        font-size: 10px;
+    }
+}
+
+.box {
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 2px 2px 5px #00000031;
+}

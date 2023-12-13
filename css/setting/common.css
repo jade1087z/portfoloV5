@@ -1,0 +1,47 @@
+body {
+}
+/* 스크롤바 레슨과 두께 변경 */
+::-webkit-scrollbar {
+    width: 1px;
+}
+#wrap {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 150px 2rem 0px 2rem;
+}
+@media (max-width: 650px) {
+    #wrap {
+        /* padding: 170px 35px 30px 35px; */
+    }
+}
+
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
+.whiteSpaceNo {
+    white-space: nowrap;
+}
+
+.none {
+    display: none;
+}
+
+/* 스크롤바 막대 색상 및 모양 변경 */
+::-webkit-scrollbar-thumb {
+    background: white; /* 스크롤바 막대 색상 */
+    border: 1px solid white; /* 스크롤바 막대 테두리 설정 */
+}
+
+/* 스크롤바 막대에 호버 효과 적용 */
+::-webkit-scrollbar-thumb:hover {
+    background-color: white;
+}
+
+/* 스크롤바 뒷 배경 색상 변경 */
+::-webkit-scrollbar-track {
+    background: white;
+}

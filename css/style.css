@@ -1,0 +1,16 @@
+@import "setting/common.css";
+@import "setting/fonts.css";
+@import "setting/reset.css";
+@import "setting/vars.css";
+@import "setting/mp.css";
+
+@import "setting/gsap.css";
+@import "setting/gsap.css";
+
+@import "section/header.css";
+@import "section/intro.css";
+/* @import "section/slider.css";
+@import "section/project.css";
+@import "section/problem.css";
+@import "section/work.css";
+@import "section/profile.css"; */
