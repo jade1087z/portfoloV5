@@ -1,5 +1,4 @@
 .INTROHIDDEN {
- 
     overflow: hidden;
 }
 .IMGHIDDEN {
@@ -9,7 +8,13 @@
 .PROJECTHIDDEN {
     overflow: hidden;
 }
+.ARROWHIDDEN {
+    overflow: hidden;
+}
 
+.HIDDEN {
+    overflow: hidden;
+}
 
 @media (max-width: 800px) {
     .INTROHIDDEN {

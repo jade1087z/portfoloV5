@@ -1,0 +1,165 @@
+@import "../setting/animation.css";
+#project {
+    padding-top: 100px;
+}
+
+.project__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.project__wrap > .wrap {
+    width: 35%;
+    padding-right: 1rem;
+}
+
+.wrap > .icon > .arrow > svg {
+    width: 6vw;
+    height: 6vw;
+    animation: arrowAnimation 1.4s infinite;
+}
+/* left */
+
+.project__wrap > .text .text__main {
+    padding-left: 1rem;
+    font-size: 4vw;
+    font-weight: 600;
+    line-height: 120%;
+}
+.project__wrap > .text > .project__flexBox {
+    display: flex;
+}
+.project__wrap > .text > .project__flexBox > .leftFlex {
+    width: 45%;
+}
+.project__wrap > .text > .project__flexBox > .rightFlex {
+    width: 53%;
+}
+
+.project__wrap > .text > .project__flexBox > .rightFlex p {
+    /* font-size: 1rem; */
+    font-size: 1vw;
+    padding: 0.5vw 0 3vw 0;
+    font-family: var(--font-chosun);
+    color: var(--desc-color);
+}
+.project__wrap > .text > .project__flexBox > .rightFlex > .desc__title {
+    color: var(--black);
+    position: relative;
+    display: inline-block;
+    width: 15vw;
+    white-space: nowrap;
+    letter-spacing: 0.1vw;
+    /* text-decoration: underline;
+    text-underline-position: under; */
+}
+.project__flexBox > .rightFlex > .desc__title::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+.project__wrap > .text > .project__flexBox > .rightFlex > .project__more {
+    padding-top: 1vw;
+}
+
+.project__wrap > .text > .project__flexBox > .rightFlex > .project__more a {
+    position: relative;
+    width: 15vw;
+    /* width: 30%; */
+    /* width: 250px; */
+    font-family: var(--font-chosun);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: auto;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
+.project__flexBox > .rightFlex > .project__more a::after,
+.project__flexBox > .rightFlex > .project__more a::before {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 103%;
+    transform: scaleX(1); /* 초기 상태를 1로 설정 */
+    transform-origin: left; /* 변환의 기준점을 왼쪽으로 설정 */
+    transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86); /* 기본 상태에 transition 추가 */
+}
+
+.project__flexBox > .rightFlex > .project__more a:hover::before {
+    transform: scaleX(0); /* hover 상태에서 scaleX를 0으로 설정 */
+    transform-origin: right; /* hover 상태에서 변환의 기준점을 오른쪽으로 설정 */
+    transition-delay: 0s;
+}
+
+.project__flexBox > .rightFlex > .project__more a:hover::after {
+    transform: scaleX(0); /* hover 상태에서 scaleX를 0으로 설정 */
+    transform-origin: right; /* hover 상태에서 변환의 기준점을 오른쪽으로 설정 */
+    transition-delay: 0.5s; /* delay를 추가하여 순차적으로 보이게 함 */
+}
+
+.project__wrap > .text > .project__flexBox > .rightFlex > .project__more a svg {
+    width: 1vw;
+    height: 1vw;
+    position: absolute;
+    top: 13%;
+    right: 0px;
+    animation: arrowAnimation2 1.4s infinite;
+}
+
+@media (max-width: 1300px) {
+    .project__more a svg {
+        /* display: none; */
+    }
+}
+
+@media (max-width: 800px) {
+    .project__wrap {
+        display: block;
+    }
+    .wrap {
+        display: none;
+    }
+    .project__wrap .text .text__main {
+        padding-left: 0;
+        font-size: 4.6vw;
+        text-align: center;
+    }
+    .project__wrap > .text > .project__flexBox {
+        display: block;
+    }
+    .project__wrap > .text > .project__flexBox .leftFlex {
+        display: none;
+    }
+    .project__wrap > .text > .project__flexBox > .rightFlex {
+        width: 100%;
+    }
+    .project__wrap > .text > .project__flexBox > .rightFlex > .desc__title {
+        width: 53%;
+        font-size: 2.8vw;
+    }
+    .project__flexBox > .rightFlex > .desc__title:before {
+        top: 63%;
+    }
+    .project__wrap > .text > .project__flexBox > .rightFlex p {
+        font-size: 2vw;
+    }
+    .project__wrap > .text > .project__flexBox > .rightFlex > .project__more a {
+        width: 50%;
+        font-size: 2.6vw;
+    }
+    .text > .project__flexBox > .rightFlex > .project__more a svg {
+        top: 30% !important;
+        width: 2.5vw !important;
+        height: 2.5vw !important;
+    }
+}

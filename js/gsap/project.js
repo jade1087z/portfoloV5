@@ -6,7 +6,7 @@ const hide = (item) => {
 };
 
 // BTT1, BTT2, BTT3 애니메이션을 수행하는 함수
-const animateBTT1_2_3 = (item, y) => {
+const animateBTT5 = (item, y) => {
     const timeline = gsap.timeline({ paused: true });
 
     timeline.fromTo(
@@ -24,12 +24,7 @@ const animateBTT1_2_3 = (item, y) => {
         }
     );
 
-    if (item.classList.contains("BTT1") && window.innerWidth > 600) {
-        const xDistance = () => {
-            let x = 0;
-            return x;
-        };
-
+    if (item.classList.contains("BTT5") && window.innerWidth > 600) {
         timeline.fromTo(
             item,
             {
@@ -45,23 +40,6 @@ const animateBTT1_2_3 = (item, y) => {
     }
 
     return timeline;
-};
-
-const animateBTT4 = (item) => {
-    timelineBTT4.fromTo(
-        item,
-        {
-            autoAlpha: 0,
-        },
-        {
-            autoAlpha: 1,
-            duration: 5.5,
-            overwrite: "auto",
-            ease: "power2.inOut",
-        }
-    );
-
-    return timelineBTT4;
 };
 
 // ScrollTrigger를 사용하여 스크롤 위치에 따라 애니메이션 실행
@@ -89,10 +67,10 @@ gsap.utils.toArray(".reveal").forEach((item) => {
         },
     });
 });
-window.addEventListener('resize', function() {
+window.addEventListener("resize", function () {
     if (window.innerWidth <= 600) {
-        const items = document.querySelectorAll('.BTT1');
-        items.forEach(item => {
+        const items = document.querySelectorAll(".BTT5");
+        items.forEach((item) => {
             gsap.to(item, {
                 x: 0,
                 duration: 0.02,
@@ -100,14 +78,11 @@ window.addEventListener('resize', function() {
                 ease: "power2.inOut",
             });
         });
-    }
-});
-window.addEventListener('resize', function() {
-    if (window.innerWidth > 600) {
-        const items = document.querySelectorAll('.BTT1');
-        items.forEach(item => {
+    } else if (window.innerWidth > 600) {
+        const items = document.querySelectorAll(".BTT5");
+        items.forEach((item) => {
             gsap.to(item, {
-                x:11 + "vw",
+                x: 11 + "vw",
                 duration: 0.02,
                 overwrite: "auto",
                 ease: "power2.inOut",
